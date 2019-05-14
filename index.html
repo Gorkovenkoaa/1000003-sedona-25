@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a href="#">
-          <img src="logo" alt="logo">
-        </a>
-        <ul class="site-navigation">
-            <li><a href="#">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#">ФОТО И ВИДЕО</a></li>
-            <li><a href="#">КАРТА ШТАТА</a></li>
-            <li><a href="#">ГОСТИНИЦЫ</a></li>
-        </ul> 
-      </nav>
-    </header>
 
-    <main>
-      <h1>Седона - сайт визитка города</h1> <!-- р1 заголовок, который будет скрыт -->
-      <!-- Welcome SEDONA -->
-      <SECTION class="">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="#">
+        <img src="logo" alt="logo">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Седона - сайт визитка города</h1>
+    <img src="" alt="Welcome Sedona">
+
+    <section class="sedona-city">
       <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
       <P>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</P>
-      </SECTION>
-      <SECTION class="">
-          <h2>Заинтересовлись?</h2>
-          <P>Укажите предпологаемые даты поездки, и мы покажемвам лучшие предложения гостиц в Седоне</P>
-          </SECTION>
-    </main>
+    </section>
 
-    <footer class="main-footer">
-      <p>#visitsedona</p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
-        </ul>
-      </div>
-      <div class="main-copyright">
-        <a class="img-copyright" href="https://htmlacademy.ru">
-          <img src="logo-htmlacademy" alt="HTML Academy">
-          </a>
-      </div>
-    </footer>    
+    <section class="hotel-search">
+      <h2>Заинтересовлись?</h2>
+      <P>Укажите предпологаемые даты поездки, и мы покажемвам лучшие предложения гостиц в Седоне</P>
+      <input type="button" class="button-blue" value="Поиск гостиницы в Седоне">
+    </section>
+    <div class="map"></div>
+  </main>
 
-  </body>
+  <footer class="main-footer">
+    <p>#Visitsedona</p>
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button button-blue" href="#">Твиттер</a></li>
+        <li><a class="social-button button-blue" href="#">Фейсбук</a></li>
+        <li><a class="social-button button-blue" href="#">Ютуб</a></li>
+      </ul>
+    </div>
+    <div class="main-copyright">
+      <a class="img-copyright button-htmlacademy" href="https://htmlacademy.ru">
+        <img src="logo-htmlacademy" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
+
+  <section class="modal modal-search">
+    <p>
+      <label for="date-in">Дата заезда:</label>
+      <input type="date" name="date-in" id="date-in" value="24 апреля 2017">
+    </p>
+    <p>
+      <label for="date-out">Дата выезда:</label>
+      <input type="date" name="date-out" id="date-out" value="4 июля 2017">
+    </p>
+    <p>
+      <label for="adults">Взрослые:</label>
+      <input type="number" name="adults" id="adults" value="2">
+    </p>
+    <p>
+      <label for="children">Дети:</label>
+      <input type="number" name="children" id="children" value="0">
+    </p>
+    <input type="button" class="button-brown" value="Найти">
+  </section>
+
+
+
+</body>
+
 </html>
