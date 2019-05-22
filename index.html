@@ -16,7 +16,7 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -33,7 +33,7 @@
     <section class="hotel-search">
       <h2>Заинтересовлись?</h2>
       <P>Укажите предпологаемые даты поездки, и мы покажемвам лучшие предложения гостиц в Седоне</P>
-      <input type="button" class="button-blue" value="Поиск гостиницы в Седоне">
+      <button class="button-blue">Поиск гостиницы в Седоне</button>
     </section>
     <div class="map"></div>
   </main>
@@ -54,25 +54,29 @@
     </div>
   </footer>
 
-  <section class="modal modal-search">
+  <form class="modal modal-search">
     <p>
       <label for="date-in">Дата заезда:</label>
-      <input type="date" name="date-in" id="date-in" value="24 апреля 2017">
+      <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
     </p>
     <p>
       <label for="date-out">Дата выезда:</label>
-      <input type="date" name="date-out" id="date-out" value="4 июля 2017">
+      <input type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
     </p>
     <p>
       <label for="adults">Взрослые:</label>
-      <input type="number" name="adults" id="adults" value="2">
+      <button>-</button>
+      <input type="text" name="adults" id="adults" placeholder="2">
+      <button>+</button>
     </p>
     <p>
       <label for="children">Дети:</label>
-      <input type="number" name="children" id="children" value="0">
+      <button>-</button>
+      <input type="text" name="children" id="children" placeholder="0">
+      <button>+</button>
     </p>
-    <input type="button" class="button-brown" value="Найти">
-  </section>
+    <input type="submit" class="button-brown" value="Найти">
+  </form>
 
 
 
